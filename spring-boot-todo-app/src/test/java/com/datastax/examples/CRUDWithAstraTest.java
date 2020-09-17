@@ -79,7 +79,7 @@ public class CRUDWithAstraTest {
         // Using CqlSession and SimpleStatement insert this is table todo_tasks
         UUID    sampleUID = UUID.randomUUID();
         System.out.println(sampleUID);
-        String  sampleTitle = "A TASK";
+        String  sampleTitle = "Spring Boot with Cassandra DB";
         int     sampleOrder = 1;
         boolean sampleComplete = true;
         
