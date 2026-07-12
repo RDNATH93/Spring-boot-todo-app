@@ -14,7 +14,17 @@ permissions:
   issues: read
   pull-requests: read
 
-network: defaults
+engine:
+  id: copilot
+  env:
+    COPILOT_PROVIDER_BASE_URL: ${{ secrets.PROVIDER_BASE_URL}}
+    COPILOT_MODEL: gpt-5-mini
+    COPILOT_PROVIDER_API_KEY: ${{ secrets.PROVIDER_API_KEY }}
+
+network:
+  allowed:
+    - github
+    - my-azure-openai-llm.openai.azure.com
 
 tools:
   github:
