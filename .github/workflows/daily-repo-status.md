@@ -20,7 +20,8 @@ engine:
   env:
     COPILOT_PROVIDER_BASE_URL: ${{ secrets.PROVIDER_BASE_URL }}
     COPILOT_PROVIDER_API_KEY: ${{ secrets.PROVIDER_API_KEY }}
-  
+    COPILOT_PROVIDER_TYPE: azure
+
     COPILOT_PROVIDER_MODEL_ID: gpt-5-mini
     COPILOT_PROVIDER_WIRE_MODEL: gpt-5-mini  
 
