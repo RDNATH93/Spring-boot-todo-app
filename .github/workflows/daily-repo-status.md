@@ -18,7 +18,7 @@ engine:
   id: codex
   model: gpt-5-mini
   args: ["-c", "model_reasoning_effort=medium"]
-  version: 0.111.0
+
   env:
     OPENAI_API_TYPE: azure
     OPENAI_BASE_URL: https://im-rahuldebnath-3990-resource.services.ai.azure.com/api/projects/im-rahuldebnath-3990/openai/v1
