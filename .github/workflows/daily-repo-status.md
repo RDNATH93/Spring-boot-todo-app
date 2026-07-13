@@ -16,10 +16,12 @@ permissions:
 
 engine:
   id: copilot
+  model: gpt-5-mini
   env:
     COPILOT_PROVIDER_BASE_URL: ${{ secrets.PROVIDER_BASE_URL }}
     COPILOT_PROVIDER_API_KEY: ${{ secrets.PROVIDER_API_KEY }}
-
+    COPILOT_PROVIDER_WIRE_API: response
+    
 network:
   allowed:
     - github
