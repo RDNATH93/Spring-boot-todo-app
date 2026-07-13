@@ -14,18 +14,15 @@ permissions:
   issues: read
   pull-requests: read
 
-engine:
-  id: copilot
-  model: gpt-4o
-  env:
-    COPILOT_PROVIDER_BASE_URL: ${{ secrets.PROVIDER_BASE_URL }}
-    COPILOT_PROVIDER_API_KEY: ${{ secrets.PROVIDER_API_KEY }}
-    COPILOT_PROVIDER_TYPE: azure
-    COPILOT_PROVIDER_WIRE_API: completions
-    
-    COPILOT_PROVIDER_MODEL_ID: gpt-5-mini
-    COPILOT_PROVIDER_WIRE_MODEL: gpt-5-mini  
+strict: false 
 
+engine:
+  id: codex
+  model: gpt-5-mini
+  env:
+    OPENAI_BASE_URL: https://im-rahuldebnath-3990-resource.services.ai.azure.com/api/projects/im-rahuldebnath-3990/openai/v1
+    OPENAI_API_KEY: ${{ secrets.LLM_ROUTER_KEY }}
+  
 network:
   allowed:
     - github
