@@ -1,0 +1,12 @@
+{
+  "models": [
+    {
+      "slug": "gpt-5-mini",
+      "display_name": "gpt-5-mini",
+      "context_window": 272000,
+      "max_context_window": 272000,
+      "supports_reasoning_effort": true,
+      "default_reasoning_effort": "medium"
+    }
+  ]
+}
