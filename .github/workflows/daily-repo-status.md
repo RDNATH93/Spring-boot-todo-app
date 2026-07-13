@@ -15,14 +15,14 @@ permissions:
   pull-requests: read
 
 engine:
-  id: copilot
-  version: 1.0.70
+  id: codex
+  model: gpt-5-mini
+  args: ["-c", "model_reasoning_effort=medium"]
+  version: 0.111.0
   env:
-    COPILOT_PROVIDER_BASE_URL: https://im-rahuldebnath-3990-resource.services.ai.azure.com/api/projects/im-rahuldebnath-3990/openai/v1
-    COPILOT_PROVIDER_API_KEY: ${{ secrets.LLM_ROUTER_KEY }}
-    COPILOT_PROVIDER_MODEL_ID: gpt-5-mini
-    COPILOT_PROVIDER_TYPE: openai
-    COPILOT_PROVIDER_WIRE_API: responses
+    OPENAI_API_TYPE: azure
+    OPENAI_BASE_URL: https://im-rahuldebnath-3990-resource.services.ai.azure.com/api/projects/im-rahuldebnath-3990/openai/v1
+    OPENAI_API_KEY: ${{ secrets.LLM_ROUTER_KEY }}
 
 network:
   allowed:
