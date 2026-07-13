@@ -21,7 +21,7 @@ engine:
   model: gpt-5-mini
   env:
     OPENAI_API_TYPE: azure
-    OPENAI_BASE_URL: https://im-rahuldebnath-3990-resource.services.ai.azure.com/api/projects/im-rahuldebnath-3990/openai/v1/responses
+    OPENAI_BASE_URL: https://im-rahuldebnath-3990-resource.services.ai.azure.com/api/projects/im-rahuldebnath-3990/openai/v1
     OPENAI_API_KEY: ${{ secrets.LLM_ROUTER_KEY }}
   
 network:
