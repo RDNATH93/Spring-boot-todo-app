@@ -21,6 +21,7 @@ engine:
     COPILOT_PROVIDER_BASE_URL: ${{ secrets.PROVIDER_BASE_URL }}
     COPILOT_PROVIDER_API_KEY: ${{ secrets.PROVIDER_API_KEY }}
     COPILOT_PROVIDER_WIRE_API: response
+    COPILOT_PROVIDER_TYPE: azure
     
 network:
   allowed:
