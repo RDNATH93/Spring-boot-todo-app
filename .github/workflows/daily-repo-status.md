@@ -19,7 +19,6 @@ engine:
   env:
     COPILOT_PROVIDER_BASE_URL: https://im-rahuldebnath-3990-resource.services.ai.azure.com/api/projects/im-rahuldebnath-3990/openai/v1
     COPILOT_PROVIDER_API_KEY: ${{ secrets.LLM_ROUTER_KEY }}
-    COPILOT_MODEL: gpt-4o
     COPILOT_PROVIDER_MODEL_ID: gpt-5-mini
     COPILOT_PROVIDER_TYPE: openai
     COPILOT_PROVIDER_WIRE_API: responses
