@@ -17,7 +17,7 @@ permissions:
 engine:
   id: codex
   model: gpt-5-mini
-  args: ["-c", "model_reasoning_effort=medium"]
+  args: ["-c", "model_catalog_json=./.github/aw/model-catalog.json", "-c","model_reasoning_effort=medium"]
 
   env:
     OPENAI_API_TYPE: azure
