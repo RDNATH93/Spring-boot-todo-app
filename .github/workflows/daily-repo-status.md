@@ -16,13 +16,16 @@ permissions:
 
 engine:
   id: copilot
-  model: gpt-5-mini
+  model: gpt-4o
   env:
     COPILOT_PROVIDER_BASE_URL: ${{ secrets.PROVIDER_BASE_URL }}
     COPILOT_PROVIDER_API_KEY: ${{ secrets.PROVIDER_API_KEY }}
     COPILOT_PROVIDER_WIRE_API: response
     COPILOT_PROVIDER_TYPE: azure
-    
+
+    COPILOT_PROVIDER_MODEL_ID: gpt-5-mini
+    COPILOT_PROVIDER_WIRE_MODEL: gpt-5-mini  
+
 network:
   allowed:
     - github
@@ -37,6 +40,8 @@ tools:
     min-integrity: none # This workflow is allowed to examine and comment on any issues
 
 safe-outputs:
+  assign-to-agent:
+    model: gpt-4o   
   mentions: false
   allowed-github-references: []
   create-issue:
