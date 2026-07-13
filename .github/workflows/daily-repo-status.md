@@ -16,6 +16,7 @@ permissions:
 
 engine:
   id: copilot
+  version: 1.0.70
   env:
     COPILOT_PROVIDER_BASE_URL: https://im-rahuldebnath-3990-resource.services.ai.azure.com/api/projects/im-rahuldebnath-3990/openai/v1
     COPILOT_PROVIDER_API_KEY: ${{ secrets.LLM_ROUTER_KEY }}
