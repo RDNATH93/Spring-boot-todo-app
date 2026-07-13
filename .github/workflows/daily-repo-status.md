@@ -17,6 +17,7 @@ permissions:
 strict: false 
 
 engine:
+  version: 0.111.0
   id: codex
   model: gpt-5-mini
   env:
